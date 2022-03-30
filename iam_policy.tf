@@ -1,3 +1,9 @@
+provider "aws" {
+ region = "us-east-1"
+  
+}
+
+
 resource "aws_iam_role" "s3_role" {
 name   = "movess3_Role"
 assume_role_policy = <<EOF
